@@ -88,3 +88,6 @@
 [submodule "bundle/vimexplorer.git"]
 	path = bundle/vimexplorer.git
 	url = https://github.com/vim-scripts/VimExplorer.git
+[submodule "bundle/lustyexplorer.git"]
+	path = bundle/lustyexplorer.git
+	url = https://github.com/vim-scripts/LustyExplorer.git
