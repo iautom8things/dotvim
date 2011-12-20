@@ -1,0 +1,84 @@
+[submodule "bundle/FuzzyFinder"]
+	path = bundle/FuzzyFinder
+	url = https://github.com/vim-scripts/FuzzyFinder.git
+[submodule "bundle/quickrun"]
+	path = bundle/quickrun
+	url = https://github.com/vim-scripts/quickrun.vim.git
+[submodule "bundle/vimproc"]
+	path = bundle/vimproc
+	url = https://github.com/Shougo/vimproc.git
+[submodule "bundle/L9"]
+	path = bundle/L9
+	url = https://github.com/git-mirror/vim-l9.git
+[submodule "bundle/JSON"]
+	path = bundle/JSON
+	url = https://github.com/vim-scripts/vim-json-bundle.git
+[submodule "bundle/SearchComplete"]
+	path = bundle/SearchComplete
+	url = https://github.com/vim-scripts/SearchComplete.git
+[submodule "bundle/VimClojure"]
+	path = bundle/VimClojure
+	url = https://github.com/vim-scripts/VimClojure.git
+[submodule "bundle/ack.vim"]
+	path = bundle/ack.vim
+	url = https://github.com/vim-scripts/ack.vim.git
+[submodule "bundle/django.vim"]
+	path = bundle/django.vim
+	url = https://github.com/vim-scripts/django.vim.git
+[submodule "bundle/nerd_commenter"]
+	path = bundle/nerd_commenter
+	url = https://github.com/vim-scripts/The-NERD-Commenter.git
+[submodule "bundle/pydoc.vim"]
+	path = bundle/pydoc.vim
+	url = https://github.com/vim-scripts/pydoc.vim.git
+[submodule "bundle/pyflakes.vim"]
+	path = bundle/pyflakes.vim
+	url = https://github.com/kevinw/pyflakes-vim.git
+[submodule "bundle/pytest.vim"]
+	path = bundle/pytest.vim
+	url = https://github.com/alfredodeza/pytest.vim.git
+[submodule "bundle/python-syntax.vim"]
+	path = bundle/python-syntax.vim
+	url = https://github.com/me-vlad/python-syntax.vim.git
+[submodule "bundle/skyweb.vim"]
+	path = bundle/skyweb.vim
+	url = https://github.com/vim-scripts/skyWeb.git
+[submodule "bundle/sunburst.vim"]
+	path = bundle/sunburst.vim
+	url = https://github.com/tangphillip/SunburstVIM.git
+[submodule "bundle/supertab.vim"]
+	path = bundle/supertab.vim
+	url = https://github.com/vim-scripts/SuperTab.git
+[submodule "bundle/taglist.vim"]
+	path = bundle/taglist.vim
+	url = https://github.com/vim-scripts/taglist.vim.git
+[submodule "bundle/autoclose.vim"]
+	path = bundle/autoclose.vim
+	url = https://github.com/vim-scripts/AutoClose.git
+[submodule "bundle/solarized.vim"]
+	path = bundle/solarized.vim
+	url = https://github.com/vim-scripts/Solarized.git
+[submodule "bundle/conque.vim"]
+	path = bundle/conque.vim
+	url = https://github.com/vim-scripts/Conque-Shell.git
+[submodule "bundle/fugitive.vim"]
+	path = bundle/fugitive.vim
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "bundle/markdown.vim"]
+	path = bundle/markdown.vim
+	url = https://github.com/tpope/vim-markdown.git
+[submodule "bundle/surround.vim"]
+	path = bundle/surround.vim
+	url = https://github.com/vim-scripts/surround.vim.git
+[submodule "bundle/trailing-whitespace"]
+	path = bundle/trailing-whitespace
+	url = https://github.com/vim-scripts/trailing-whitespace
+[submodule "bundle/vividchalk.vim"]
+	path = bundle/vividchalk.vim
+	url = https://github.com/vim-scripts/vividchalk.vim.git
+[submodule "bundle/coffee-script.vim"]
+	path = bundle/coffee-script.vim
+	url = https://github.com/vim-scripts/vim-coffee-script.git
+[submodule "bundle/nerdtree.vim"]
+	path = bundle/nerdtree.vim
+	url = https://github.com/scrooloose/nerdtree.git
