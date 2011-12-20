@@ -82,3 +82,6 @@
 [submodule "bundle/nerdtree.vim"]
 	path = bundle/nerdtree.vim
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "bundle/fuzzyfinder_textmate"]
+	path = bundle/fuzzyfinder_textmate
+	url = https://github.com/sethbc/fuzzyfinder_textmate.git
