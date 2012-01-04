@@ -1,6 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/mz/Dropbox/dev/js-tu/js'
-let g:netrw_dirhist_2='/Users/mz/Dropbox/dev/nino.dev/collaborative-text-editor/src'
-let g:netrw_dirhist_3='/Users/mz/Dropbox/dev/dotvim/bundle'
-let g:netrw_dirhist_4='/Users/mz/Dropbox/dev/summa/casp/src'
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/mz/Dropbox/dev/summa/protCAD/src/ensemble'
+let g:netrw_dirhist_2='/Users/mz/Dropbox/dev/summa/protCAD/data/residue_defs'
+let g:netrw_dirhist_3='/Users/mz/Dropbox/dev/summa/protCAD/data'
+let g:netrw_dirhist_4='/Users/mz/Dropbox/dev/summa/protCAD/data/pdb'
+let g:netrw_dirhist_5='/Users/mz/Dropbox/dev/summa/protCAD/src'
+let g:netrw_dirhist_6='/Users/mz/Dropbox/dev/summa/protCAD/src/ensemble'

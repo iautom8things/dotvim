@@ -39,7 +39,8 @@ set scrolloff=5
 set foldenable
 set gdefault
 set list
-set listchars=tab:>.,trail:.,extends:#,nbsp:. " Highlight problematic whitespace
+set invlist
+"set listchars=tab:>.,trail:.,extends:#,nbsp:. " Highlight problematic whitespace
 set nowrap
 set autoindent
 set tw=78
@@ -125,3 +126,8 @@ function! JavaScriptFold()
     endfunction
     setl foldtext=FoldText()
 endfunction
+
+"""""""""""""""""""""""""""""""""""""
+" => My Commands                    "
+"""""""""""""""""""""""""""""""""""""
+map <leader>fws :%s/\t/    <CR> :FixWhitespace <CR>

@@ -1,2 +1,2 @@
+colorscheme native
 set background=dark
-colorscheme solarized
