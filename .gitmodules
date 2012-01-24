@@ -31,9 +31,6 @@
 [submodule "bundle/pydoc.vim"]
 	path = bundle/pydoc.vim
 	url = https://github.com/vim-scripts/pydoc.vim.git
-[submodule "bundle/pyflakes.vim"]
-	path = bundle/pyflakes.vim
-	url = https://github.com/kevinw/pyflakes-vim.git
 [submodule "bundle/pytest.vim"]
 	path = bundle/pytest.vim
 	url = https://github.com/alfredodeza/pytest.vim.git
