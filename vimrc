@@ -9,7 +9,7 @@ call pathogen#infect()
 syntax on
 filetype plugin on
 filetype indent on
-colorscheme vividchalk
+colorscheme native
 set background=dark
 set gfn=Menlo:h14
 set shell=/usr/local/bin/zsh
