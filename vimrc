@@ -131,15 +131,15 @@ endfunction
 " => My Commands                    "
 """""""""""""""""""""""""""""""""""""
 map <leader>fws :%s/\t/    <CR> :FixWhitespace <CR>
-
+map <leader>ffr :ruby finder.rescan!<CR>
 " => Line Number switch between relative/absolute
 
-function! g:ToggleNuMode() 
-    if(&rnu == 1) 
-        set nu 
-    else 
-        set rnu 
-    endif 
-endfunc 
+function! g:ToggleNuMode()
+    if(&rnu == 1)
+        set nu
+    else
+        set rnu
+    endif
+endfunc
 
-nnoremap <C-L> :call g:ToggleNuMode()<cr> 
+nnoremap <C-L> :call g:ToggleNuMode()<cr>
