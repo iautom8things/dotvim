@@ -16,6 +16,7 @@ set shell=/usr/local/bin/zsh
 """""""""""""""""""""""""""""""""""""
 " =>        General                 "
 """""""""""""""""""""""""""""""""""""
+set nocompatible
 set backspace=indent,eol,start
 set noerrorbells
 set autoread
@@ -153,3 +154,25 @@ nnoremap <C-L> :call g:ToggleNuMode ( )<cr>
 " Escape removes last search "
 """"""""""""""""""""""""""""""
 nnoremap <esc> :noh<return><esc>
+
+"""""""""""""""""
+" Toggle TagBar "
+"""""""""""""""""
+nnoremap <C-T> :TagbarToggle<cr>
+
+""""""""""""""
+" fix arrows "
+""""""""""""""
+map <Esc>[B <Down>
+
+""""""""""""""""""""
+" TMux style Splits"
+""""""""""""""""""""
+nnoremap <C-w><bar> <C-w>v
+nnoremap <C-w>_ <C-w>s
+
+""""""""""""""""""""
+" L/R Tab movement "
+""""""""""""""""""""
+nnoremap <Left> :tabprevious<CR>
+nnoremap <Right> :tabnext<CR>
