@@ -100,3 +100,9 @@
 [submodule "bundle/vim-ruby"]
 	path = bundle/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
+[submodule "bundle/jslint-vim"]
+	path = bundle/jslint-vim
+	url = https://github.com/vim-scripts/jslint.vim.git
+[submodule "bundle/tagbar.vim"]
+	path = bundle/tagbar.vim
+	url = https://github.com/majutsushi/tagbar

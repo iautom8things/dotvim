@@ -1,21 +1,22 @@
 """""""""""""""""""""""""""""""""""""
 " =>        Pathogen                "
 """""""""""""""""""""""""""""""""""""
-call pathogen#runtime_append_all_bundles()
-call pathogen#infect()
+call pathogen#runtime_append_all_bundles ( )
+call pathogen#infect ( )
 """""""""""""""""""""""""""""""""""""
 " =>        Colors                  "
 """""""""""""""""""""""""""""""""""""
 syntax on
 filetype plugin on
 filetype indent on
-colorscheme vividchalk
+colorscheme darkZ
 set background=dark
 set gfn=Menlo:h14
 set shell=/usr/local/bin/zsh
 """""""""""""""""""""""""""""""""""""
 " =>        General                 "
 """""""""""""""""""""""""""""""""""""
+set backspace=indent,eol,start
 set noerrorbells
 set autoread
 set number
@@ -43,7 +44,7 @@ set invlist
 "set listchars=tab:>.,trail:.,extends:#,nbsp:. " Highlight problematic whitespace
 set nowrap
 set autoindent
-set tw=78
+"set tw=78
 set shiftwidth=4
 set expandtab
 set tabstop=4
@@ -106,25 +107,25 @@ set printoptions=number:y
 """""""""""""""""""""""""""""""""""""
 " => JavaScript section             "
 """""""""""""""""""""""""""""""""""""
-au FileType javascript call JavaScriptFold()
+au FileType javascript call JavaScriptFold ( )
 au FileType javascript setl fen
 au FileType javascript setl nocindent
 
-au FileType javascript imap <c-t> AJS.log();<esc>hi
-au FileType javascript imap <c-a> alert();<esc>hi
+au FileType javascript imap <c-t> AJS.log ( );<esc>hi
+au FileType javascript imap <c-a> alert ( );<esc>hi
 
 au FileType javascript inoremap <buffer> $r return
 au FileType javascript inoremap <buffer> $f //--- PH ----------------------------------------------<esc>FP2xi
 
-function! JavaScriptFold()
+function! JavaScriptFold ( )
     setl foldmethod=syntax
     setl foldlevelstart=1
     syn region foldBraces start=/{/ end=/}/ transparent fold keepend extend
 
-    function! FoldText()
+    function! FoldText ( )
     return substitute(getline(v:foldstart), '{.*', '{...}', '')
     endfunction
-    setl foldtext=FoldText()
+    setl foldtext=FoldText ( )
 endfunction
 
 """""""""""""""""""""""""""""""""""""
@@ -132,9 +133,10 @@ endfunction
 """""""""""""""""""""""""""""""""""""
 map <leader>fws :%s/\t/    <CR> :FixWhitespace <CR>
 map <leader>ffr :ruby finder.rescan!<CR>
+map <leader>fps :%s/\([^ ]\)();$/\1 ( );<CR> :%s/\([^ ]\)(\(.*\));$/\1 ( \2 );<CR>
 " => Line Number switch between relative/absolute
 
-function! g:ToggleNuMode()
+function! g:ToggleNuMode ( )
     if(&rnu == 1)
         set nu
     else
@@ -142,4 +144,12 @@ function! g:ToggleNuMode()
     endif
 endfunc
 
-nnoremap <C-L> :call g:ToggleNuMode()<cr>
+"""""""""""""""""""""""""""""""""""""""""""""""""
+" Toggle Between Relative/Absolute Line Numbers "
+"""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <C-L> :call g:ToggleNuMode ( )<cr>
+
+""""""""""""""""""""""""""""""
+" Escape removes last search "
+""""""""""""""""""""""""""""""
+nnoremap <esc> :noh<return><esc>
