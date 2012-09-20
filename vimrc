@@ -11,8 +11,15 @@ filetype plugin on
 filetype indent on
 colorscheme darkZ
 set background=dark
-set gfn=Menlo:h14
+"set gfn=Menlo:h14
+set gfn=Droid\ Sans\ Mono\ Dotted\ For\ Powerline:h14
 set shell=/usr/local/bin/zsh
+"""""""""""""""""""""""""""""""""""""
+" =>        PowerLine               "
+"""""""""""""""""""""""""""""""""""""
+let g:Powerline_symbols = 'fancy'
+set laststatus=2
+set encoding=utf-8
 """""""""""""""""""""""""""""""""""""
 " =>        General                 "
 """""""""""""""""""""""""""""""""""""
@@ -134,7 +141,8 @@ endfunction
 """""""""""""""""""""""""""""""""""""
 map <leader>fws :%s/\t/    <CR> :FixWhitespace <CR>
 map <leader>ffr :ruby finder.rescan!<CR>
-map <leader>fps :%s/\([^ ]\)();$/\1 ( );<CR> :%s/\([^ ]\)(\(.*\));$/\1 ( \2 );<CR>
+map <leader>fps :%s/\([^ ]\)();$/\1 ( );<CR> :%s/\([^ ]\)(\(.*\));$/\1 ( \2 );<CR> :%s/\([^ ]\)() const;$/\1 ( ) const;<CR> :%s/\([^ ]\)(\(.*\)) const;$/\1 ( \2 ) const;<CR>
+map <leader>fpp "kdt:"kP :exe '%s/'. @k .'::\(.*\)(\(\_[^()]*\))/' . @k . '::\1 ( \2 )'<CR> :%s/(  )/( )<CR>
 " => Line Number switch between relative/absolute
 
 function! g:ToggleNuMode ( )
@@ -176,3 +184,8 @@ nnoremap <C-w>_ <C-w>s
 """"""""""""""""""""
 nnoremap <Left> :tabprevious<CR>
 nnoremap <Right> :tabnext<CR>
+
+"""""""""""""""
+" Easier Redo "
+"""""""""""""""
+nnoremap <C-u> <C-R>

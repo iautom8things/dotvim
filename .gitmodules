@@ -106,3 +106,6 @@
 [submodule "bundle/tagbar.vim"]
 	path = bundle/tagbar.vim
 	url = https://github.com/majutsushi/tagbar
+[submodule "bundle/vim-powerline"]
+	path = bundle/vim-powerline
+	url = https://github.com/Lokaltog/vim-powerline
