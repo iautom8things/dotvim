@@ -106,3 +106,15 @@
 [submodule "bundle/glsl.vim"]
 	path = bundle/glsl.vim
 	url = https://github.com/vim-scripts/glsl.vim.git
+[submodule "bundle/vim-powerline"]
+	path = bundle/vim-powerline
+	url = https://github.com/Lokaltog/vim-powerline
+[submodule "bundle/simpleandfriendly.vim"]
+	path = bundle/simpleandfriendly.vim
+	url = https://github.com/vim-scripts/simpleandfriendly.vim.git
+[submodule "bundle/summerfruit256.vim"]
+	path = bundle/summerfruit256.vim
+	url = https://github.com/vim-scripts/summerfruit256.vim.git
+[submodule "bundle/pyte.vim"]
+	path = bundle/pyte.vim
+	url = https://github.com/therubymug/vim-pyte.git

@@ -11,8 +11,11 @@ filetype plugin on
 filetype indent on
 colorscheme darkZ
 set background=dark
-"set gfn=Menlo:h14
-set gfn=Droid\ Sans\ Mono\ Dotted\ For\ Powerline:h14
+set gfn=Menlo:h14
+"set gfn=Droid\ Sans\ Mono\ Dotted\ For\ Powerline:h14
+"set gfn=Menlo\ for\ Powerline:h14
+"set gfn=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
+"set gfn=Inconsolata-dz\ for\ Powerline:h14
 set shell=/usr/local/bin/zsh
 """""""""""""""""""""""""""""""""""""
 " =>        PowerLine               "
@@ -99,6 +102,8 @@ au FileType python syn keyword pythonDecorator True None False self
 
 au BufNewFile,BufRead *.jinja set syntax=htmljinja
 au BufNewFile,BufRead *.mako set ft=mako
+au BufNewFile,BufRead *.frag,*.vert,*.fp,*.vp,*.glsl setf glsl 
+
 
 au FileType python inoremap <buffer> $r return
 au FileType python inoremap <buffer> $i import
@@ -136,6 +141,12 @@ function! JavaScriptFold ( )
     setl foldtext=FoldText ( )
 endfunction
 
+""""""""""""""""""
+" => C++ section "
+""""""""""""""""""
+
+set syntax=cpp.doxygen
+
 """""""""""""""""""""""""""""""""""""
 " => My Commands                    "
 """""""""""""""""""""""""""""""""""""
@@ -143,7 +154,10 @@ map <leader>fws :%s/\t/    <CR> :FixWhitespace <CR>
 map <leader>ffr :ruby finder.rescan!<CR>
 map <leader>fps :%s/\([^ ]\)();$/\1 ( );<CR> :%s/\([^ ]\)(\(.*\));$/\1 ( \2 );<CR> :%s/\([^ ]\)() const;$/\1 ( ) const;<CR> :%s/\([^ ]\)(\(.*\)) const;$/\1 ( \2 ) const;<CR>
 map <leader>fpp "kdt:"kP :exe '%s/'. @k .'::\(.*\)(\(\_[^()]*\))/' . @k . '::\1 ( \2 )'<CR> :%s/(  )/( )<CR>
-" => Line Number switch between relative/absolute
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Line Number switch between relative/absolute "
+"""""""""""""""""""""""""""""""""""""""""""""""""""
 
 function! g:ToggleNuMode ( )
     if(&rnu == 1)
