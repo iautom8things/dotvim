@@ -118,3 +118,6 @@
 [submodule "bundle/pyte.vim"]
 	path = bundle/pyte.vim
 	url = https://github.com/therubymug/vim-pyte.git
+[submodule "bundle/vim-multicursor.git"]
+	path = bundle/vim-multicursor.git
+	url = https://github.com/paradigm/vim-multicursor.git

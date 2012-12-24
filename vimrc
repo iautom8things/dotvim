@@ -145,7 +145,8 @@ endfunction
 " => C++ section "
 """"""""""""""""""
 
-set syntax=cpp.doxygen
+au BufRead,BufNewFile *.cc set syntax=cpp.doxygen
+au BufRead,BufNewFile *.cpp set syntax=cpp.doxygen
 
 """""""""""""""""""""""""""""""""""""
 " => My Commands                    "
@@ -203,3 +204,8 @@ nnoremap <Right> :tabnext<CR>
 " Easier Redo "
 """""""""""""""
 nnoremap <C-u> <C-R>
+
+"""""""""""""""""""""""""""""""""""""""""""""""
+" Octave does calculations of highlited area! "
+"""""""""""""""""""""""""""""""""""""""""""""""
+xnoremap <space>c :!octave --silent \| cut -c8-<cr>
