@@ -121,3 +121,18 @@
 [submodule "bundle/vim-multicursor.git"]
 	path = bundle/vim-multicursor.git
 	url = https://github.com/paradigm/vim-multicursor.git
+[submodule "bundle/vim-arduino"]
+	path = bundle/vim-arduino
+	url = https://github.com/tclem/vim-arduino.git
+[submodule "bundle/vim-arduino-syntax"]
+	path = bundle/vim-arduino-syntax
+	url = https://github.com/vim-scripts/Arduino-syntax-file.git
+[submodule "bundles/vim-fugitive"]
+	path = bundles/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "bundle/dgb-vim"]
+	path = bundle/dgb-vim
+	url = https://github.com/yuratomo/dbg.vim.git
+[submodule "bundle/nerd_tree"]
+	path = bundle/nerd_tree
+	url = https://github.com/scrooloose/nerdtree.git

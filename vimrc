@@ -26,6 +26,10 @@ set encoding=utf-8
 """""""""""""""""""""""""""""""""""""
 " =>        General                 "
 """""""""""""""""""""""""""""""""""""
+set wildignore+=*/tmp/*,*.so,*.sw*,*.zip,*.jpg,*.gif,*.pyc,*.class,*.java~,*.o,*.a
+let g:ctrlp_custom_ignore = {
+	\ 'dir':  '\v[\/]\.(git|hg|svn)$',
+	\ 'file': '\v\.(exe|so|dll|swp|zip|jpg|gif|pyc|class|o|a)$' }
 set nocompatible
 set backspace=indent,eol,start
 set noerrorbells
@@ -68,7 +72,7 @@ map <C-e> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
 map <leader>e :NERDTreeFind<CR>
 nmap <leader>nt :NERDTreeFind<CR>
 let NERDTreeShowBookmarks=1
-let NERDTreeIgnore=['\.pyc', '\~$', '\.swo$', '\.swp$', '\.git', '\.hg', '\.svn', '\.bzr', '\.java~', '\.class']
+let NERDTreeIgnore=['\.pyc', '\.swo$', '\.swp$', '\.git', '\.hg', '\.svn', '\.bzr', '\.class']
 let NERDTreeChDirMode=0
 let NERDTreeQuitOnOpen=1
 let NERDTreeShowHidden=1
@@ -205,7 +209,44 @@ nnoremap <Right> :tabnext<CR>
 """""""""""""""
 nnoremap <C-u> <C-R>
 
-"""""""""""""""""""""""""""""""""""""""""""""""
-" Octave does calculations of highlited area! "
-"""""""""""""""""""""""""""""""""""""""""""""""
-xnoremap <space>c :!octave --silent \| cut -c8-<cr>
+"""""""""""""""""""""""""
+" tab for bracket pairs "
+"""""""""""""""""""""""""
+nnoremap <tab> %
+vnoremap <tab> %
+
+""""""""""""""""""""""""""""""""""""""""""""
+" Octave does calculations of entire line! "
+""""""""""""""""""""""""""""""""""""""""""""
+xnoremap <space>c :!octave --silent \| sed "s/ans = //" \| sed "s/^ //"<cr>
+xnoremap <space>m "mx :let @z = system("octave --silent --eval \"<C-r>m\" \| sed 's/ans = //' \| sed 's/^ //'")<cr>:let @z = @z[:-2]<cr>h"zP
+
+"""""""""""""""
+" Multicursor "
+"""""""""""""""
+let g:multicursor_quit = "<C-s>"
+nnoremap <leader>mc :<c-u>call MultiCursorPlaceCursor()<cr>
+nnoremap <leader>rc :<c-u>call MultiCursorRemoveCursor()<cr>
+nnoremap <leader>uc :<c-u>call MultiCursorManual()<cr>
+nnoremap <leader>sc :<c-u>call MultiCursorSearch('')<cr>
+
+"""""""""""
+" Arduino "
+"""""""""""
+
+au BufRead,BufNewFile *.ino set syntax=arduino.doxygen
+
+""""""""""""""""""""
+" Fix ^M new lines "
+""""""""""""""""""""
+
+function! ReplaceNewLines ( )
+    :%s/\r/\r/
+endfunction
+
+function! RemoveNewLines ( )
+    :e ++ff=dos
+endfunction
+
+" for latex ... "
+set colorcolumn=50
