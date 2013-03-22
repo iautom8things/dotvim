@@ -136,3 +136,9 @@
 [submodule "bundle/nerd_tree"]
 	path = bundle/nerd_tree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "bundle/snipMate.vim"]
+	path = bundle/snipMate.vim
+	url = https://github.com/vim-scripts/snipMate.git
+[submodule "bundle/snipmate-snippets"]
+	path = bundle/snipmate-snippets
+	url = https://github.com/honza/snipmate-snippets.git
