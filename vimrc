@@ -17,6 +17,7 @@ set gfn=Menlo:h14
 "set gfn=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
 "set gfn=Inconsolata-dz\ for\ Powerline:h14
 set shell=/usr/local/bin/zsh
+hi clear ExtraWhitespace
 """""""""""""""""""""""""""""""""""""
 " =>        PowerLine               "
 """""""""""""""""""""""""""""""""""""
@@ -99,7 +100,7 @@ map <leader>tlt :TlistToggle<CR>
 " => Python section                 "
 """""""""""""""""""""""""""""""""""""
 let python_highlight_indents = 0
-let python_highlight_all = 1
+let python_highlight_all = 0
 map <leader>i0 :let python_highlight_indents = 0<CR>:source $MYVIMRC<CR>
 map <leader>i1 :let python_highlight_indents = 1<CR>:source $MYVIMRC<CR>
 au FileType python syn keyword pythonDecorator True None False self
@@ -249,8 +250,8 @@ function! RemoveNewLines ( )
 endfunction
 
 " for latex ... "
-set colorcolumn=50
-highlight ColorColumn guibg=Black
+"set colorcolumn=50
+"highlight ColorColumn guibg=Black
 au BufRead,BufNewFile *.tex setlocal filetype=tex
 
 """"""""""""""""

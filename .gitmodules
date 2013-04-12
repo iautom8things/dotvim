@@ -16,9 +16,6 @@
 [submodule "bundle/SearchComplete"]
 	path = bundle/SearchComplete
 	url = https://github.com/vim-scripts/SearchComplete.git
-[submodule "bundle/VimClojure"]
-	path = bundle/VimClojure
-	url = https://github.com/vim-scripts/VimClojure.git
 [submodule "bundle/ack.vim"]
 	path = bundle/ack.vim
 	url = https://github.com/vim-scripts/ack.vim.git
@@ -28,33 +25,15 @@
 [submodule "bundle/nerd_commenter"]
 	path = bundle/nerd_commenter
 	url = https://github.com/vim-scripts/The-NERD-Commenter.git
-[submodule "bundle/pydoc.vim"]
-	path = bundle/pydoc.vim
-	url = https://github.com/vim-scripts/pydoc.vim.git
-[submodule "bundle/pytest.vim"]
-	path = bundle/pytest.vim
-	url = https://github.com/alfredodeza/pytest.vim.git
 [submodule "bundle/python-syntax.vim"]
 	path = bundle/python-syntax.vim
 	url = https://github.com/me-vlad/python-syntax.vim.git
-[submodule "bundle/skyweb.vim"]
-	path = bundle/skyweb.vim
-	url = https://github.com/vim-scripts/skyWeb.git
-[submodule "bundle/sunburst.vim"]
-	path = bundle/sunburst.vim
-	url = https://github.com/tangphillip/SunburstVIM.git
 [submodule "bundle/supertab.vim"]
 	path = bundle/supertab.vim
 	url = https://github.com/vim-scripts/SuperTab.git
-[submodule "bundle/taglist.vim"]
-	path = bundle/taglist.vim
-	url = https://github.com/vim-scripts/taglist.vim.git
 [submodule "bundle/autoclose.vim"]
 	path = bundle/autoclose.vim
 	url = https://github.com/vim-scripts/AutoClose.git
-[submodule "bundle/solarized.vim"]
-	path = bundle/solarized.vim
-	url = https://github.com/vim-scripts/Solarized.git
 [submodule "bundle/conque.vim"]
 	path = bundle/conque.vim
 	url = https://github.com/vim-scripts/Conque-Shell.git
@@ -70,33 +49,18 @@
 [submodule "bundle/trailing-whitespace"]
 	path = bundle/trailing-whitespace
 	url = https://github.com/vim-scripts/trailing-whitespace
-[submodule "bundle/vividchalk.vim"]
-	path = bundle/vividchalk.vim
-	url = https://github.com/vim-scripts/vividchalk.vim.git
 [submodule "bundle/coffee-script.vim"]
 	path = bundle/coffee-script.vim
 	url = https://github.com/vim-scripts/vim-coffee-script.git
 [submodule "bundle/fuzzyfinder_textmate"]
 	path = bundle/fuzzyfinder_textmate
 	url = https://github.com/sethbc/fuzzyfinder_textmate.git
-[submodule "bundle/256-jungle.git"]
-	path = bundle/256-jungle.git
-	url = https://github.com/vim-scripts/256-jungle.git
-[submodule "bundle/native.vim"]
-	path = bundle/native.vim
-	url = https://github.com/vim-scripts/native.vim.git
-[submodule "bundle/ctrlp.vim"]
-	path = bundle/ctrlp.vim
-	url = https://github.com/kien/ctrlp.vim.git
 [submodule "bundle/YankRing.vim"]
 	path = bundle/YankRing.vim
 	url = https://github.com/vim-scripts/YankRing.vim.git
 [submodule "bundle/vim-rails"]
 	path = bundle/vim-rails
 	url = https://github.com/tpope/vim-rails.git
-[submodule "bundle/vim-fugitive"]
-	path = bundle/vim-fugitive
-	url = https://github.com/tpope/vim-fugitive.git
 [submodule "bundle/vim-ruby"]
 	path = bundle/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
@@ -109,15 +73,6 @@
 [submodule "bundle/vim-powerline"]
 	path = bundle/vim-powerline
 	url = https://github.com/Lokaltog/vim-powerline
-[submodule "bundle/simpleandfriendly.vim"]
-	path = bundle/simpleandfriendly.vim
-	url = https://github.com/vim-scripts/simpleandfriendly.vim.git
-[submodule "bundle/summerfruit256.vim"]
-	path = bundle/summerfruit256.vim
-	url = https://github.com/vim-scripts/summerfruit256.vim.git
-[submodule "bundle/pyte.vim"]
-	path = bundle/pyte.vim
-	url = https://github.com/therubymug/vim-pyte.git
 [submodule "bundle/vim-multicursor.git"]
 	path = bundle/vim-multicursor.git
 	url = https://github.com/paradigm/vim-multicursor.git
@@ -127,18 +82,9 @@
 [submodule "bundle/vim-arduino-syntax"]
 	path = bundle/vim-arduino-syntax
 	url = https://github.com/vim-scripts/Arduino-syntax-file.git
-[submodule "bundles/vim-fugitive"]
-	path = bundles/vim-fugitive
-	url = https://github.com/tpope/vim-fugitive.git
 [submodule "bundle/dgb-vim"]
 	path = bundle/dgb-vim
 	url = https://github.com/yuratomo/dbg.vim.git
 [submodule "bundle/nerd_tree"]
 	path = bundle/nerd_tree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule "bundle/snipMate.vim"]
-	path = bundle/snipMate.vim
-	url = https://github.com/vim-scripts/snipMate.git
-[submodule "bundle/snipmate-snippets"]
-	path = bundle/snipmate-snippets
-	url = https://github.com/honza/snipmate-snippets.git
