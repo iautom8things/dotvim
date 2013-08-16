@@ -100,3 +100,24 @@
 [submodule "bundle/javascript-syntax.vim"]
 	path = bundle/javascript-syntax.vim
 	url = https://github.com/jelera/vim-javascript-syntax.git
+[submodule "bundle/tlib_vim"]
+	path = bundle/tlib_vim
+	url = https://github.com/tomtom/tlib_vim.git
+[submodule "budnle/vim-addon-mw-utils"]
+	path = budnle/vim-addon-mw-utils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "bundle/vim-snipmate"]
+	path = bundle/vim-snipmate
+	url = https://github.com/garbas/vim-snipmate.git
+[submodule "bundle/vim-snippets"]
+	path = bundle/vim-snippets
+	url = https://github.com/honza/vim-snippets
+[submodule "bundle/vim-supertab"]
+	path = bundle/vim-supertab
+	url = https://github.com/ervandew/supertab.git
+[submodule "bundle/undotree.vim"]
+	path = bundle/undotree.vim
+	url = https://github.com/mbbill/undotree
+[submodule "bundle/table_mode.vim"]
+	path = bundle/table_mode.vim
+	url = https://github.com/dhruvasagar/vim-table-mode

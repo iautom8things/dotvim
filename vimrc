@@ -132,6 +132,7 @@ set printoptions=number:y
 au FileType javascript call JavaScriptFold ( )
 au FileType javascript setl fen
 au FileType javascript setl nocindent
+au FileType javascript setl ts=2 sw=2 sts=2 noexpandtab
 
 au FileType javascript imap <c-t> AJS.log ( );<esc>hi
 au FileType javascript imap <c-a> alert ( );<esc>hi
@@ -257,6 +258,14 @@ endfunction
 "set colorcolumn=50
 "highlight ColorColumn guibg=Black
 au BufRead,BufNewFile *.tex setlocal filetype=tex
+
+"""""""""""""""""""""""""""
+" snippets and completion "
+"""""""""""""""""""""""""""
+let g:SuperTabLongestHighlight = 0
+let g:SuperTabLongestEnhanced = 0
+let g:SuperTabCrMapping = 1
+let g:SuperTabMappingForward = '<c-s>'
 
 """"""""""""""""
 " testing dash "
