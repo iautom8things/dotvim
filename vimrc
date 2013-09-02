@@ -1,8 +1,57 @@
 """""""""""""""""""""""""""""""""""""
+" =>        Vundle                  "
+"""""""""""""""""""""""""""""""""""""
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'https://github.com/vim-scripts/FuzzyFinder.git'
+Bundle 'https://github.com/vim-scripts/quickrun.vim.git'
+Bundle 'https://github.com/Shougo/vimproc.git'
+Bundle 'https://github.com/git-mirror/vim-l9.git'
+Bundle 'https://github.com/vim-scripts/vim-json-bundle.git'
+Bundle 'https://github.com/vim-scripts/SearchComplete.git'
+Bundle 'https://github.com/vim-scripts/ack.vim.git'
+Bundle 'https://github.com/vim-scripts/django.vim.git'
+Bundle 'https://github.com/vim-scripts/The-NERD-Commenter.git'
+Bundle 'https://github.com/me-vlad/python-syntax.vim.git'
+Bundle 'https://github.com/vim-scripts/SuperTab.git'
+Bundle 'https://github.com/vim-scripts/AutoClose.git'
+Bundle 'https://github.com/vim-scripts/Conque-Shell.git'
+Bundle 'https://github.com/tpope/vim-fugitive.git'
+Bundle 'https://github.com/tpope/vim-markdown.git'
+Bundle 'https://github.com/vim-scripts/surround.vim.git'
+Bundle 'https://github.com/vim-scripts/trailing-whitespace'
+Bundle 'https://github.com/vim-scripts/vim-coffee-script.git'
+Bundle 'https://github.com/sethbc/fuzzyfinder_textmate.git'
+Bundle 'https://github.com/vim-scripts/YankRing.vim.git'
+Bundle 'https://github.com/tpope/vim-rails.git'
+Bundle 'https://github.com/vim-ruby/vim-ruby.git'
+Bundle 'https://github.com/majutsushi/tagbar'
+Bundle 'https://github.com/vim-scripts/glsl.vim.git'
+Bundle 'https://github.com/Lokaltog/vim-powerline'
+Bundle 'https://github.com/paradigm/vim-multicursor.git'
+Bundle 'https://github.com/tclem/vim-arduino.git'
+Bundle 'https://github.com/vim-scripts/Arduino-syntax-file.git'
+Bundle 'https://github.com/yuratomo/dbg.vim.git'
+Bundle 'https://github.com/scrooloose/nerdtree.git'
+Bundle 'https://github.com/kien/ctrlp.vim.git'
+Bundle 'https://github.com/othree/javascript-libraries-syntax.vim.git'
+Bundle 'https://github.com/vim-scripts/SyntaxComplete.git'
+Bundle 'https://github.com/jelera/vim-javascript-syntax.git'
+Bundle 'https://github.com/tomtom/tlib_vim.git'
+Bundle 'https://github.com/MarcWeber/vim-addon-mw-utils.git'
+Bundle 'https://github.com/garbas/vim-snipmate.git'
+Bundle 'https://github.com/honza/vim-snippets'
+Bundle 'https://github.com/mbbill/undotree'
+Bundle 'https://github.com/dhruvasagar/vim-table-mode'
+filetype plugin indent on
+"""""""""""""""""""""""""""""""""""""
 " =>        Pathogen                "
 """""""""""""""""""""""""""""""""""""
-call pathogen#runtime_append_all_bundles ( )
-call pathogen#infect ( )
+" call pathogen#runtime_append_all_bundles ( )
+" call pathogen#infect ( )
 """""""""""""""""""""""""""""""""""""
 " =>        Disable Beeps!          "
 """""""""""""""""""""""""""""""""""""
@@ -262,10 +311,9 @@ au BufRead,BufNewFile *.tex setlocal filetype=tex
 """""""""""""""""""""""""""
 " snippets and completion "
 """""""""""""""""""""""""""
-let g:SuperTabLongestHighlight = 0
-let g:SuperTabLongestEnhanced = 0
-let g:SuperTabCrMapping = 1
-let g:SuperTabMappingForward = '<c-s>'
+imap <C-Tab> <Plug>snipMateNextOrTrigger
+smap <C-Tab> <Plug>snipMateNextOrTrigger
+let g:SuperTabDefaultCompletionType = "context"
 
 """"""""""""""""
 " testing dash "
