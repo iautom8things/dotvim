@@ -4,54 +4,55 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'scala.vim'
-Bundle 'vim-scala'
-Bundle 'mattn/webapi-vim'
-Bundle 'mattn/gist-vim'
-Bundle 'jnwhiteh/vim-golang'
-Bundle 'https://github.com/vim-scripts/FuzzyFinder.git'
-Bundle 'https://github.com/vim-scripts/quickrun.vim.git'
-Bundle 'https://github.com/mazubieta/gitlink-vim.git'
-Bundle 'https://github.com/Shougo/vimproc.git'
-Bundle 'https://github.com/git-mirror/vim-l9.git'
-Bundle 'https://github.com/vim-scripts/vim-json-bundle.git'
-Bundle 'https://github.com/vim-scripts/SearchComplete.git'
-Bundle 'https://github.com/vim-scripts/ack.vim.git'
-Bundle 'https://github.com/vim-scripts/django.vim.git'
-Bundle 'https://github.com/vim-scripts/The-NERD-Commenter.git'
-Bundle 'https://github.com/me-vlad/python-syntax.vim.git'
-Bundle 'https://github.com/vim-scripts/SuperTab.git'
-Bundle 'https://github.com/vim-scripts/AutoClose.git'
-Bundle 'https://github.com/vim-scripts/Conque-Shell.git'
-Bundle 'https://github.com/tpope/vim-fugitive.git'
-Bundle 'https://github.com/tpope/vim-markdown.git'
-Bundle 'https://github.com/vim-scripts/surround.vim.git'
-Bundle 'https://github.com/vim-scripts/trailing-whitespace'
-Bundle 'https://github.com/vim-scripts/vim-coffee-script.git'
-Bundle 'https://github.com/sethbc/fuzzyfinder_textmate.git'
-Bundle 'https://github.com/vim-scripts/YankRing.vim.git'
-Bundle 'https://github.com/tpope/vim-rails.git'
-Bundle 'https://github.com/vim-ruby/vim-ruby.git'
-Bundle 'https://github.com/majutsushi/tagbar'
-Bundle 'https://github.com/vim-scripts/glsl.vim.git'
-Bundle 'https://github.com/Lokaltog/vim-powerline'
-Bundle 'https://github.com/paradigm/vim-multicursor.git'
-Bundle 'https://github.com/tclem/vim-arduino.git'
-Bundle 'https://github.com/vim-scripts/Arduino-syntax-file.git'
-Bundle 'https://github.com/yuratomo/dbg.vim.git'
-Bundle 'https://github.com/scrooloose/nerdtree.git'
-Bundle 'https://github.com/kien/ctrlp.vim.git'
-Bundle 'https://github.com/othree/javascript-libraries-syntax.vim.git'
-Bundle 'https://github.com/vim-scripts/SyntaxComplete.git'
-Bundle 'https://github.com/jelera/vim-javascript-syntax.git'
-Bundle 'https://github.com/tomtom/tlib_vim.git'
-Bundle 'https://github.com/MarcWeber/vim-addon-mw-utils.git'
-Bundle 'https://github.com/garbas/vim-snipmate.git'
-Bundle 'https://github.com/honza/vim-snippets'
-Bundle 'https://github.com/mbbill/undotree'
-Bundle 'https://github.com/dhruvasagar/vim-table-mode'
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'scala.vim'
+Plugin 'vim-scala'
+Plugin 'mattn/webapi-vim'
+Plugin 'mattn/gist-vim'
+Plugin 'fatih/vim-go'
+Plugin 'https://github.com/vim-scripts/FuzzyFinder.git'
+Plugin 'https://github.com/vim-scripts/quickrun.vim.git'
+Plugin 'https://github.com/mazubieta/gitlink-vim.git'
+Plugin 'https://github.com/Shougo/vimproc.git'
+Plugin 'https://github.com/git-mirror/vim-l9.git'
+Plugin 'https://github.com/vim-scripts/vim-json-bundle.git'
+Plugin 'https://github.com/vim-scripts/SearchComplete.git'
+Plugin 'https://github.com/vim-scripts/ack.vim.git'
+Plugin 'https://github.com/vim-scripts/django.vim.git'
+Plugin 'https://github.com/vim-scripts/The-NERD-Commenter.git'
+Plugin 'https://github.com/me-vlad/python-syntax.vim.git'
+Plugin 'https://github.com/vim-scripts/SuperTab.git'
+Plugin 'https://github.com/vim-scripts/AutoClose.git'
+Plugin 'https://github.com/vim-scripts/Conque-Shell.git'
+Plugin 'https://github.com/tpope/vim-fugitive.git'
+Plugin 'https://github.com/tpope/vim-markdown.git'
+Plugin 'https://github.com/vim-scripts/surround.vim.git'
+Plugin 'https://github.com/vim-scripts/trailing-whitespace'
+Plugin 'https://github.com/vim-scripts/vim-coffee-script.git'
+Plugin 'https://github.com/sethbc/fuzzyfinder_textmate.git'
+Plugin 'https://github.com/vim-scripts/YankRing.vim.git'
+Plugin 'https://github.com/tpope/vim-rails.git'
+Plugin 'https://github.com/vim-ruby/vim-ruby.git'
+Plugin 'https://github.com/majutsushi/tagbar'
+Plugin 'https://github.com/vim-scripts/glsl.vim.git'
+Plugin 'https://github.com/Lokaltog/vim-powerline'
+Plugin 'https://github.com/paradigm/vim-multicursor.git'
+Plugin 'https://github.com/tclem/vim-arduino.git'
+Plugin 'https://github.com/vim-scripts/Arduino-syntax-file.git'
+Plugin 'https://github.com/yuratomo/dbg.vim.git'
+Plugin 'https://github.com/scrooloose/nerdtree.git'
+Plugin 'https://github.com/kien/ctrlp.vim.git'
+Plugin 'https://github.com/othree/javascript-libraries-syntax.vim.git'
+Plugin 'https://github.com/vim-scripts/SyntaxComplete.git'
+Plugin 'https://github.com/jelera/vim-javascript-syntax.git'
+Plugin 'https://github.com/tomtom/tlib_vim.git'
+Plugin 'https://github.com/MarcWeber/vim-addon-mw-utils.git'
+Plugin 'https://github.com/garbas/vim-snipmate.git'
+Plugin 'https://github.com/honza/vim-snippets'
+Plugin 'https://github.com/mbbill/undotree'
+Plugin 'https://github.com/dhruvasagar/vim-table-mode'
+call vundle#end()
 filetype plugin indent on
 """""""""""""""""""""""""""""""""""""
 " => .    Gist.vim                  "
@@ -78,7 +79,7 @@ set gfn=Menlo:h14
 "set gfn=Menlo\ for\ Powerline:h14
 "set gfn=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
 "set gfn=Inconsolata-dz\ for\ Powerline:h14
-set shell=/usr/local/bin/zsh
+set shell=/bin/bash
 hi clear ExtraWhitespace
 """""""""""""""""""""""""""""""""""""
 " =>        PowerLine               "
@@ -348,3 +349,8 @@ autocmd FileType go autocmd BufWritePre <buffer> silent Fmt
 """""""""""
 command GitLink :echo gitlink#GitLink()
 nmap <leader>gl :GitLink<CR>
+
+""""""""""
+" fix autoclose and {{}} "
+" 
+imap {{ {{}}<Esc>hi
