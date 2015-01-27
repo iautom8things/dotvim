@@ -6,8 +6,14 @@ filetype off
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
+Bundle 'scala.vim'
+Bundle 'vim-scala'
+Bundle 'mattn/webapi-vim'
+Bundle 'mattn/gist-vim'
+Bundle 'jnwhiteh/vim-golang'
 Bundle 'https://github.com/vim-scripts/FuzzyFinder.git'
 Bundle 'https://github.com/vim-scripts/quickrun.vim.git'
+Bundle 'https://github.com/mazubieta/gitlink-vim.git'
 Bundle 'https://github.com/Shougo/vimproc.git'
 Bundle 'https://github.com/git-mirror/vim-l9.git'
 Bundle 'https://github.com/vim-scripts/vim-json-bundle.git'
@@ -48,10 +54,13 @@ Bundle 'https://github.com/mbbill/undotree'
 Bundle 'https://github.com/dhruvasagar/vim-table-mode'
 filetype plugin indent on
 """""""""""""""""""""""""""""""""""""
-" =>        Pathogen                "
+" => .    Gist.vim                  "
 """""""""""""""""""""""""""""""""""""
-" call pathogen#runtime_append_all_bundles ( )
-" call pathogen#infect ( )
+let g:gist_clip_command = 'pbcopy'
+let g:gist_detect_filetype = 1
+let g:gist_open_browser_after_post = 1
+let g:gist_post_private = 1
+let g:gist_show_privates = 1
 """""""""""""""""""""""""""""""""""""
 " =>        Disable Beeps!          "
 """""""""""""""""""""""""""""""""""""
@@ -62,7 +71,7 @@ set vb t_vb=
 syntax on
 filetype plugin on
 filetype indent on
-colorscheme darkZ
+colorscheme jellybeans
 set background=dark
 set gfn=Menlo:h14
 "set gfn=Droid\ Sans\ Mono\ Dotted\ For\ Powerline:h14
@@ -114,10 +123,10 @@ set invlist
 set nowrap
 set autoindent
 "set tw=78
-set shiftwidth=4
+set shiftwidth=2
 set expandtab
-set tabstop=4
-set softtabstop=4
+set tabstop=2
+set softtabstop=2
 set pastetoggle=<F12>
 """""""""""""""""""""""""""""""""""""
 " =>         NERDTree               "
@@ -313,7 +322,7 @@ au BufRead,BufNewFile *.tex setlocal filetype=tex
 """""""""""""""""""""""""""
 imap <C-Tab> <Plug>snipMateNextOrTrigger
 smap <C-Tab> <Plug>snipMateNextOrTrigger
-let g:SuperTabDefaultCompletionType = "context"
+"let g:SuperTabDefaultCompletionType = 'context'
 
 """"""""""""""""
 " testing dash "
@@ -328,3 +337,14 @@ function! SearchDash()
   redraw!
 endfunction
 map <leader>d :call SearchDash()<CR>
+
+"""""""""""
+" go-lang "
+"""""""""""
+autocmd FileType go autocmd BufWritePre <buffer> silent Fmt
+
+"""""""""""
+" gitlink "
+"""""""""""
+command GitLink :echo gitlink#GitLink()
+nmap <leader>gl :GitLink<CR>
