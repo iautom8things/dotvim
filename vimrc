@@ -6,20 +6,13 @@ filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-Plugin 'scala.vim'
-Plugin 'vim-scala'
 Plugin 'mattn/webapi-vim'
 Plugin 'mattn/gist-vim'
 Plugin 'fatih/vim-go'
-Plugin 'https://github.com/vim-scripts/FuzzyFinder.git'
-Plugin 'https://github.com/vim-scripts/quickrun.vim.git'
 Plugin 'https://github.com/mazubieta/gitlink-vim.git'
-Plugin 'https://github.com/Shougo/vimproc.git'
 Plugin 'https://github.com/git-mirror/vim-l9.git'
 Plugin 'https://github.com/vim-scripts/vim-json-bundle.git'
 Plugin 'https://github.com/vim-scripts/SearchComplete.git'
-Plugin 'https://github.com/vim-scripts/ack.vim.git'
-Plugin 'https://github.com/vim-scripts/django.vim.git'
 Plugin 'https://github.com/vim-scripts/The-NERD-Commenter.git'
 Plugin 'https://github.com/me-vlad/python-syntax.vim.git'
 Plugin 'https://github.com/vim-scripts/SuperTab.git'
@@ -29,7 +22,6 @@ Plugin 'https://github.com/tpope/vim-fugitive.git'
 Plugin 'https://github.com/tpope/vim-markdown.git'
 Plugin 'https://github.com/vim-scripts/surround.vim.git'
 Plugin 'https://github.com/vim-scripts/trailing-whitespace'
-Plugin 'https://github.com/vim-scripts/vim-coffee-script.git'
 Plugin 'https://github.com/sethbc/fuzzyfinder_textmate.git'
 Plugin 'https://github.com/vim-scripts/YankRing.vim.git'
 Plugin 'https://github.com/tpope/vim-rails.git'
@@ -40,7 +32,6 @@ Plugin 'https://github.com/Lokaltog/vim-powerline'
 Plugin 'https://github.com/paradigm/vim-multicursor.git'
 Plugin 'https://github.com/tclem/vim-arduino.git'
 Plugin 'https://github.com/vim-scripts/Arduino-syntax-file.git'
-Plugin 'https://github.com/yuratomo/dbg.vim.git'
 Plugin 'https://github.com/scrooloose/nerdtree.git'
 Plugin 'https://github.com/kien/ctrlp.vim.git'
 Plugin 'https://github.com/othree/javascript-libraries-syntax.vim.git'
@@ -48,8 +39,6 @@ Plugin 'https://github.com/vim-scripts/SyntaxComplete.git'
 Plugin 'https://github.com/jelera/vim-javascript-syntax.git'
 Plugin 'https://github.com/tomtom/tlib_vim.git'
 Plugin 'https://github.com/MarcWeber/vim-addon-mw-utils.git'
-Plugin 'https://github.com/garbas/vim-snipmate.git'
-Plugin 'https://github.com/honza/vim-snippets'
 Plugin 'https://github.com/mbbill/undotree'
 Plugin 'https://github.com/dhruvasagar/vim-table-mode'
 call vundle#end()
@@ -317,13 +306,6 @@ endfunction
 "set colorcolumn=50
 "highlight ColorColumn guibg=Black
 au BufRead,BufNewFile *.tex setlocal filetype=tex
-
-"""""""""""""""""""""""""""
-" snippets and completion "
-"""""""""""""""""""""""""""
-imap <C-Tab> <Plug>snipMateNextOrTrigger
-smap <C-Tab> <Plug>snipMateNextOrTrigger
-"let g:SuperTabDefaultCompletionType = 'context'
 
 """"""""""""""""
 " testing dash "
